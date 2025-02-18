@@ -21,7 +21,7 @@ public class S01_Merge_Two_2D_Arrays_by_Summing_Values {
         }
 
         while(i < nums1.length) {
-            result.add(nums[i]);
+            result.add(nums1[i]);
             i++;
         }
 
@@ -35,9 +35,9 @@ public class S01_Merge_Two_2D_Arrays_by_Summing_Values {
 
     public static void main(String args[]) {
 
-        int[] nums1 = {{1,2},{2,3},{4,5}};
-        int[] nums2 = {{1,4},{3,2},{4,1}};
+        int[][] nums1 = {{1,2},{2,3},{4,5}};
+        int[][] nums2 = {{1,4},{3,2},{4,1}};
 
-        System.out.println(mergeArrays(nums1, nums2));
+        System.out.println(Arrays.deepToString(mergeArrays(nums1, nums2)));
     }
 }
